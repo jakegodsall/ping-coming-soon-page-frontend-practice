@@ -10,18 +10,39 @@
 
   <title>Frontend Mentor | Ping coming soon page</title>
 
+  <!-- Custom stylesheet -->
   <link rel="stylesheet" href="dist/main.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d260a33e24.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+  <div class="grid">
+    <div class="grid__text">
+      <img src="images/logo.svg" alt="Ping Logo">
+      <h1 class="main-title">We are launching soon!</h1>
+      <p>Subscribe and get notified</p>
+      <form class="form">
+        <div class="form__row">
+          <input type="text" name="email-address" id="email-address" placeholder="Your email address...">
+        </div>
+        <div class="form__row">
+          <button type="submit">Notify Me</button>
+        </div>
+      </form>
+    </div>
+    <div class="grid__image">
+      <img src="images/illustration-dashboard.png" alt="Dashboard of the forthcoming app">
+    </div>
+    <div class="grid__socials">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+    <p>&copy; Copyright Ping. All rights reserved.
+    </p>
+  </div>
 
   <footer>
     <p class="attribution">
