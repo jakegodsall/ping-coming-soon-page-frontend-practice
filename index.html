@@ -20,15 +20,16 @@
 
   <div class="grid">
     <div class="grid__text">
-      <img src="images/logo.svg" alt="Ping Logo">
-      <h1 class="main-title">We are launching soon!</h1>
+      <img class="logo" src="images/logo.svg" alt="Ping Logo">
+      <h1 class="main-title">We are launching <span class="soon">soon!</span></h1>
       <p>Subscribe and get notified</p>
       <form class="form">
         <div class="form__row">
-          <input type="text" name="email-address" id="email-address" placeholder="Your email address...">
+          <input type="text" name="email-address" class="email-address" id="email-address"
+            placeholder="Your email address...">
         </div>
         <div class="form__row">
-          <button type="submit">Notify Me</button>
+          <button type="submit" class="submit" id="submit">Notify Me</button>
         </div>
       </form>
     </div>
@@ -50,6 +51,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

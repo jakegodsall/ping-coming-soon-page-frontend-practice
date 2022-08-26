@@ -1,0 +1,37 @@
+.form {
+    width: 100%;
+
+    &__row {
+        width: 100%;
+
+        .email-address,
+        .submit {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            width: 100%;
+            padding: 12px 20px;
+        }
+
+        .email-address {
+            border: 1px solid var(--grey);
+        }
+
+        .email-address:focus {
+            outline: solid 1px var(--grey);
+        }
+
+        .submit {
+            background-color: var(--blue);
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0px 10px 5px -5px rgb(189, 189, 209);
+            transition: transform 0.2s ease-in;
+        }
+
+        .submit:hover {
+            transform: translateY(2px);
+        }
+    }
+}

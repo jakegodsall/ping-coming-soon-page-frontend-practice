@@ -1,0 +1,26 @@
+.grid {
+    width: 375px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 40px;
+
+    &__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+            width: 20%;
+        }
+
+
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+}

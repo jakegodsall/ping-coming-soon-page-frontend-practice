@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
