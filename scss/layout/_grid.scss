@@ -13,14 +13,40 @@
 
         .logo {
             width: 20%;
+            margin: var(--vertical-margin) 0;
         }
 
-
+        p {
+            margin-top: 0px;
+            margin-bottom: var(--vertical-margin);
+        }
     }
 
     &__image {
         img {
             width: 100%;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__socials {
+        margin-inline: auto;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            .social {
+                width: 20px;
+                height: 100%;
+                filter: invert(47%) sepia(31%) saturate(5465%) hue-rotate(208deg) brightness(100%) contrast(92%);
+            }
+
+            .facebook {
+                height: 24px;
+            }
+
         }
     }
 }

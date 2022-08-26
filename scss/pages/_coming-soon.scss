@@ -3,3 +3,13 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.copyright {
+    color: var(--grey);
+}
+
+footer {
+    margin-top: var(--vertical-margin);
+    padding: 50px;
+    text-align: center;
+}
