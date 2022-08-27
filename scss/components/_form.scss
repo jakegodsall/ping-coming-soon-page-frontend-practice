@@ -54,5 +54,10 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
         gap: 20px;
+
+        #error-message {
+            text-align: left;
+            margin-left: 25px;
+        }
     }
 }
