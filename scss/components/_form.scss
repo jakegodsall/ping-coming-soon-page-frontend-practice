@@ -36,6 +36,19 @@
         }
     }
 
+    .error-input {
+        border-color: red;
+    }
+
+    #error-message {
+        color: #dd2b2b;
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: .8rem;
+        text-align: center;
+
+    }
+
     @media screen and (min-width: 1000px) {
         display: grid;
         grid-template-columns: 2fr 1fr;
