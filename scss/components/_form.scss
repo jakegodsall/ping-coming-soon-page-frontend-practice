@@ -35,4 +35,11 @@
             transform: translateY(2px);
         }
     }
+
+    @media screen and (min-width: 1000px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
 }
