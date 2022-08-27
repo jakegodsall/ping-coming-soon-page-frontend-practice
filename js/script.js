@@ -1,22 +1,19 @@
 document.querySelector('.form').addEventListener('submit', function (e) {
 
     console.log(e.target.elements['email-address'].value);
-
+    e.preventDefault();
+    removeError(e);
     const parent = document.getElementById('row-email');
     const errorInputEl = parent.children[0];
 
     if (errorInputEl.value == '') {
-        showError(e, 'Whoops! It looks like you forgot to add your email');
-    } else {
-        removeError(e);
+        return showError(e, 'Whoops! It looks like you forgot to add your email');
+    } else {      
         const regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
         if (!regex.test(errorInputEl.value)) {
-            showError(e, 'Please provide a valid email address');
-        } else {
-            removeError(e);
-        }
+            return showError(e, 'Please provide a valid email address');
+        } 
     }
-    e.preventDefault();
 })
 
 function showError(event, message) {
